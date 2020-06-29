@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta name="format-detection" content="telephone=no">
+	<title>신용회복위원회-깨끗하고 밝은 신용사회를 만들어 가겠습니다.</title>
+	<link href="../static/css/reset.css" rel="stylesheet" />
+	<link href="../static/css/common.css" rel="stylesheet" />
+	<link href="../static/css/contents.css" rel="stylesheet" />
+	<script type="text/javascript" src="../static/js/common.js"></script>
+	<script type="text/javascript" src="../static/js/ui.js"></script>
+	<!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement("header"); 
+        document.createElement("nav"); 
+        document.createElement("section"); 
+        document.createElement("article"); 
+        document.createElement("footer");
+    </script>
+<![endif]-->
+</head>
+
+<body>
+	<div id="skip_nav">
+		<a href="#container">본문바로가기</a>
+		<a href="#gnb">전체메뉴바로가기</a>
+		<a href="#footer">하단바로가기</a>
+	</div>
+
+	<button type="button" class="btn ty1" data-popup-open="popup-1"><span>팝업열기</span></button>
+
+	<!-- layer popup -->
+	<div class="popUp" data-popup="popup-1">
+		<div class="popWrap">
+			<div class="popCon">
+				<button type="button" class="btnClose" data-popup-close="popup-1">닫기</button>
+				<h3>직업</h3>
+				<div class="tabWrap">
+					<ul class="tabBar" id="tabMenu">
+						<li class="on">
+							<a href="#tab_cont1">
+								<span>직접 선택</span>
+							</a>
+						</li>
+						<li>
+							<a href="#tab_cont2">
+								<span>목록 선택</span>
+							</a>
+						</li>
+					</ul>
+					<div id="tab_cont1" class="tabCon">
+						<div class="popScroll" style="height: 300px">
+							<!-- 7월 3일 컬러변경 -->
+							<p class="txt color1">구분 &middot; 대 &middot; 중 &middot; 소 분류를 모두 선택하여 주십시오.</p>
+							<!-- //7월 3일 컬러변경 -->
+							<dl class="tblList">
+								<dt>직업 구분 <span class="necessary">필수 입력</span></dt>
+								<dd>
+									<div class="radioGroup">
+										<div class="radioBox">
+											<input type="radio" id="radio1" name="radio" checked="checked"><label for="radio1">근로소득자</label>
+										</div>
+										<div class="radioBox">
+											<input type="radio" id="radio2" name="radio"><label for="radio2">자영업</label>
+										</div>
+										<div class="radioBox">
+											<input type="radio" id="radio3" name="radio"><label for="radio3">일용직</label>
+										</div>
+										<div class="radioBox">
+											<input type="radio" id="radio4" name="radio"><label for="radio4">무직</label>
+										</div>
+									</div>
+									<p class="blTxt4">직업 구분을 선택하여 주십시오.</p>
+								</dd>
+								<dt>대분류</dt>
+								<dd>
+									<!-- 2019-10-15 수정 -->
+									<select name="" id="" class="selectbox" title="직업 대분류 선택">
+										<!--// 2019-10-15 수정 -->
+										<option value="">선택</option>
+									</select>
+								</dd>
+								<dt>중분류</dt>
+								<dd>
+									<!-- 2019-10-15 수정 -->
+									<select name="" id="" class="selectbox" title="직업 중분류 선택">
+										<!--// 2019-10-15 수정 -->
+										<option value="">선택</option>
+									</select>
+								</dd>
+								<dt>소분류</dt>
+								<dd>
+									<!-- 2019-10-15 수정 -->
+									<select name="" id="" class="selectbox" title="직업 소분류 선택">
+										<!--// 2019-10-15 수정 -->
+										<option value="">선택</option>
+									</select>
+								</dd>
+								<dt>직책</dt>
+								<dd>
+									<!-- 2019-10-15 수정 -->
+									<select name="" id="" class="selectbox" title="직책 선택">
+										<!--// 2019-10-15 수정 -->
+										<option value="">선택</option>
+									</select>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<div id="tab_cont2" class="tabCon">
+						<div class="popScroll" style="height: 300px">
+							<!-- 2019-08-19 수정 -->
+							<p class="txt">하단 <span class="color1 fs15">목록 중 1개를 선택</span>하여 주십시오.</p>
+							<!--// 2019-08-19 수정 -->
+							<ul class="tblList">
+								<li>
+									<div class="radioBox">
+										<input type="radio" id="radio11" name="radio" checked="checked"><label for="radio11">일용직/건설일용직/일용직</label>
+									</div>
+								</li>
+								<li>
+									<div class="radioBox">
+										<input type="radio" id="radio12" name="radio"><label for="radio12">일용직/음식숙박업일용직/일용직</label>
+									</div>
+								</li>
+								<li>
+									<div class="radioBox">
+										<input type="radio" id="radio13" name="radio"><label for="radio13">일용직/기타 일용직/일용직</label>
+									</div>
+								</li>
+								<li>
+									<div class="radioBox">
+										<input type="radio" id="radio14" name="radio"><label for="radio14">무직/중고등학생/중고등학생</label>
+									</div>
+								</li>
+								<li>
+									<div class="radioBox">
+										<input type="radio" id="radio15" name="radio"><label for="radio15">무직/초등학생/초등학생</label>
+									</div>
+								</li>
+								<li>
+									<div class="radioBox">
+										<input type="radio" id="radio16" name="radio"><label for="radio16">자영업자/건축물 및 토목공사업/ 대표</label>
+									</div>
+								</li>
+								<li>
+									<div class="radioBox">
+										<input type="radio" id="radio17" name="radio"><label for="radio17">자영업자/건설장비 임대업/대표</label>
+									</div>
+								</li>
+								<li>
+									<div class="radioBox">
+										<input type="radio" id="radio18" name="radio"><label for="radio18">자영업자/보험 및 연금업(보험설계사 포함)/대표</label>
+									</div>
+								</li>
+								<li>
+									<div class="radioBox">
+										<input type="radio" id="radio19" name="radio"><label for="radio19">무직/주부/주부</label>
+									</div>
+								</li>
+								<li>
+									<div class="radioBox">
+										<input type="radio" id="radio20" name="radio"><label for="radio20">무직/무직/무직</label>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="btnBox">
+					<button type="button" class="btn ty3"><span>확인</span></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //layer popup -->
+
+	<style type="text/css">
+		.popUp {
+			display: block
+		}
+	</style>
+</body>
+
+</html>

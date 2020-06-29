@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+	<title>신용회복위원회-깨끗하고 밝은 신용사회를 만들어 가겠습니다.</title>
+	<link rel="stylesheet" href="../static/css/font-awesome-4.7.0/css/font-awesome.css" />
+	<link rel="stylesheet" href="../static/css/video.css" />
+	<link rel="stylesheet" href="../static/css/animate.css" />
+	<script src="../static/js/common.js"></script>
+	<script src="../static/js/jquery.animateSprite.min.js"></script>
+	<script src="../static/js/videoscript.js"></script>
+	<script src="../static/js/videobody.js"></script>
+	<script src="../static/js/videobottom.js"></script>
+</head>
+
+<body>
+	<!-- Body -->
+	<div id="container">
+
+		<div class="wrap">
+			<video id="video" class="first-media" poster="" webkit-playsinline="" playsinline="">
+				<source src="../static/media/sample.mp4" type="video/mp4">
+			</video>
+		</div>
+
+		<div id="bottom" class="intro nf">
+			<div class="inner">
+				<div class="scrollBox">
+					<div id="display"></div>
+					<button id="dis_close_btn"></button>
+				</div>
+				<div class="progressGroup">
+					<div class="progress">
+						<div class="progressbg"></div>
+						<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+							<div class="p_circle"></div>
+						</div>
+					</div>
+					<div class="time">
+						<span class="currentTime">00:00</span> /
+						<span class="duration">00:00</span>
+					</div>
+				</div>
+				<div class="videoGroup">
+					<div class="videobtn playBtn">
+						<button title="재생" class="play">
+							<i class="fa fa-play"></i>
+						</button>
+					</div>
+					<div class="videobtn pauseBtn">
+						<button title="일시정지" class="pause">
+							<i class="fa fa-pause"></i>
+						</button>
+					</div>
+					<div class="videobtn stopBtn">
+						<button title="다시보기" class="stop">
+							<i class="fa fa-square "></i>
+						</button>
+					</div>
+				</div>
+				<div class="soundGroup">
+					<div class="videobtn soundBtn">
+						<button title="소리끄기" class="sound">
+							<i class="fa fa-volume-up"></i>
+						</button>
+						<button title="소리켜기" class="mute dn">
+							<i class="fa fa-volume-off"></i>
+						</button>
+					</div>
+					<div class="soundbar">
+						<button class="volume" title="볼륨">
+							<span class="volumeBar">
+								<span class="p_circle"></span>
+							</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a href="#" class="mobilePlayBtn" style="display: block;">
+			<span><i class="fa fa-play-circle-o"></i></span>
+		</a>
+	</div>
+
+
+</body>
+
+</html>

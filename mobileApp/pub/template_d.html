@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+	<title>공통 템플릿</title>
+	<link href="../static/css/reset.css" rel="stylesheet" />
+	<link href="../static/css/common.css" rel="stylesheet" />
+	<link href="../static/css/contents.css" rel="stylesheet" />
+	<link href="../static/css/contents2.css" rel="stylesheet" />
+	<script type="text/javascript" src="../static/js/common.js"></script>
+	<script type="text/javascript" src="../static/js/ui.js"></script>
+	<!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement("header"); 
+        document.createElement("nav"); 
+        document.createElement("section"); 
+        document.createElement("article");
+        document.createElement("aside"); 
+        document.createElement("footer");
+    </script>
+<![endif]-->
+
+
+	<!-- 2018.05.16 -->
+	<script type="text/javascript" src="code/scripts/shCore.js"></script>
+	<script type="text/javascript" src="code/scripts/shBrushBash.js"></script>
+	<script type="text/javascript" src="code/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="code/scripts/shBrushJava.js"></script>
+	<script type="text/javascript" src="code/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="code/scripts/shBrushXml.js"></script>
+
+	<link type="text/css" rel="stylesheet" href="code/styles/shCore.css" />
+	<link type="text/css" rel="stylesheet" href="code/styles/shThemeDefault.css" />
+	<script type="text/javascript">
+		SyntaxHighlighter.all();
+	</script>
+	<!-- //2018.05.16 -->
+	<style>
+		body {
+			padding: 20px;
+			padding-top: 100px;
+		}
+
+		h1 {
+			font-size: 30px;
+			padding: 0 20px;
+		}
+
+		h2 {
+			padding: 20px 0;
+			margin-top: 20px;
+			border-top: 1px dashed #666666;
+			font-size: 20px;
+		}
+
+		.guideLink {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			padding: 10px;
+			background: #fff;
+			border-bottom: 1px solid #333;
+		}
+
+		.guideLink>a {
+			display: inline-block;
+			border: 1px solid #333;
+			padding: 5px;
+		}
+
+		.box {
+			margin-top: 20px;
+			border: 1px solid #E3E3E3
+		}
+
+		.brdBox {
+			min-height: 40px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>공통 템플릿</h1>
+
+
+	<h2>테이블 케이스</h2>
+	<div class="tblDiv2">
+		<table>
+			<caption></caption>
+			<colgroup>
+				<col style="width:313px">
+				<col style="width:*">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">
+						<span class="label">
+							직업 <span class="necessary">필수 입력</span>
+						</span>
+					</th>
+					<td>
+						<div class="inpGroup1 etc">
+							<div class="ele">
+								<button type="button" class="btn ty5"><span>검색</span></button>
+							</div>
+							<div class="ele">
+								<div class="inputBox">
+									<input type="text" name="" id="" class="inp" readonly="readonly" value="대분류/ 중분류/ 소분류/ 직급">
+								</div>
+							</div>
+						</div>
+
+						<!-- souce code 뷰어 -->
+						<div class="box">
+							<pre class="brush: html;">
+								<div class="inpGroup1 etc">
+									<div class="ele">
+										<button type="button" class="btn ty5"><span>검색</span></button>
+									</div>
+									<div class="ele">
+										<div class="inputBox">
+											<input type="text" name="" id="" class="inp" readonly="readonly" value="대분류/ 중분류/ 소분류/ 직급">
+										</div>
+									</div>
+								</div>
+							</pre>
+						</div>
+						<!-- //souce code 뷰어 -->
+
+					</td>
+				</tr>
+
+				<tr>
+					<th scope="row"><span class="label">inpGroup1</span></th>
+					<td>
+						<div class="inpGroup1">
+							<div class="ele">
+								<div class="inputBox">
+									<input type="text" name="" id="idchk" class="inp">
+								</div>
+							</div>
+							<div class="ele">
+								<button type="button" class="btn ty5"><span>중복검사</span></button>
+							</div>
+						</div>
+						<!-- souce code 뷰어 -->
+						<div class="box">
+							<pre class="brush: html;">
+								<div class="inpGroup1">
+									<div class="ele">
+										<div class="inputBox">
+											<input type="text" name="" id="idchk" class="inp">
+										</div>
+									</div>
+									<div class="ele">
+										<button type="button" class="btn ty5"><span>중복검사</span></button>
+									</div>
+								</div>
+							</pre>
+						</div>
+						<!-- //souce code 뷰어 -->
+					</td>
+				</tr>
+
+				<tr>
+					<th scope="row">
+						<label for="">inpGroup1</label>
+					</th>
+					<td>
+						<div class="inpGroup1">
+							<div class="ele">
+								<select name="" id="" class="selectbox" title="장애명 선택">
+									<option value="">장애명</option>
+									<option value="">시각장애인</option>
+									<option value="">하지장애</option>
+								</select>
+							</div>
+							<div class="ele">
+								<select name="" id="" class="selectbox" title="종합 장애 정도 선택">
+									<option value="">종합 장애 정도</option>
+									<option value="">장애의 정도가 심한 장애인</option>
+									<option value="">장애의 정도가 심하지 않은 장애인</option>
+								</select>
+							</div>
+						</div>
+
+						<!-- souce code 뷰어 -->
+						<div class="box">
+							<pre class="brush: html;">
+								<div class="inpGroup1">
+									<div class="ele">
+										<select name="" id="" class="selectbox" title="">
+											<option value=""></option>
+										</select>
+									</div>
+									<div class="ele">
+										<select name="" id="" class="selectbox" title="">
+											<option value=""></option>
+										</select>
+									</div>
+								</div>
+							</pre>
+						</div>
+						<!-- //souce code 뷰어 -->
+					</td>
+				</tr>
+
+				<tr>
+					<th>
+						<label for="">inpGroup1 etc</label>
+					</th>
+					<td>
+						<div class="inpGroup1 etc">
+							<span>매월 </span>
+							<select name="" id="repaymentDay" class="selectbox wd168 ml5" title="상환예정일 선택">
+								<option value="">선택</option>
+								<option value="">1</option>
+							</select>
+							<span class="ml5"> 일 납부</span>
+						</div>
+
+						<!-- souce code 뷰어 -->
+						<div class="box">
+							<pre class="brush: html;">
+								<div class="inpGroup1 etc">
+									<span>매월 </span>
+									<select name="" id="repaymentDay" class="selectbox wd168 ml5" title=" 선택">
+										<option value="">선택</option>
+									</select>
+									<span class="ml5"> 일 납부</span>
+								</div>
+							</pre>
+						</div>
+						<!-- //souce code 뷰어 -->
+
+					</td>
+				</tr>
+
+
+				<tr>
+					<th scope="row"><span class="label">주소 검색</span></th>
+					<td>
+						<div class="addressSch">
+							<div class="adr1">
+								<button type="button" class="btn ty5"><span>검색</span></button>
+								<div class="inputBox">
+									<input type="text" name="" id="" class="inp" readonly="readonly" title="우편번호" placeholder="우편번호">
+								</div>
+							</div>
+							<div class="adr2">
+								<div class="inputBox">
+									<input type="text" name="" id="" class="inp" readonly="readonly" title="상세주소" placeholder="상세주소">
+								</div>
+							</div>
+						</div>
+
+						<!-- souce code 뷰어 -->
+						<div class="box">
+							<pre class="brush: html;">
+								<div class="addressSch">
+	<div class="adr1">
+		<button type="button" class="btn ty5"><span>검색</span></button>
+		<div class="inputBox">
+			<input type="text" name="" id="" class="inp" readonly="readonly" title="우편번호" placeholder="우편번호">
+		</div>
+	</div>
+	<div class="adr2">
+		<div class="inputBox">
+			<input type="text" name="" id="" class="inp" readonly="readonly" title="상세주소" placeholder="상세주소">
+		</div>
+	</div>
+</div>
+							</pre>
+						</div>
+						<!-- //souce code 뷰어 -->
+
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><span class="label">체크박스 그룹</span></th>
+					<td>
+						<div class="chkGroup">
+							<div class="checkbox">
+								<input type="checkbox" id="postInfo"><label for="postInfo">우편안내</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="smsChk"><label for="smsChk">SMS 수신</label>
+							</div>
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<th scope="row"><span class="label">금액 표기</span></th>
+					<td>
+						<div class="inputBox idx">
+							<input type="text" name="" id="expend1" class="inp num" onkeyup="numHangul2(this)"> <span class="idxTxt">원</span>
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<th scope="row"><span class="label">Textarea</span></th>
+					<td>
+						<textarea name="" id="" cols="30" rows="10" class="textarea"></textarea>
+					</td>
+				</tr>
+
+				<tr>
+					<th scope="row" class="vm"><span class="label">Textarea</span></th>
+					<td style="height:100px; background:#ddd;">
+						th label vertical-aling:middle;
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+
+	<h2>테이블 케이스</h2>
+	<div class="tblDiv mt30">
+		<table>
+			<caption></caption>
+			<colgroup>
+				<col style="width:25%">
+				<col style="width:25%">
+				<col style="width:25%">
+				<col style="width:25%">
+			</colgroup>
+			<thead>
+				<tr>
+					<th class="tc" scope="col">은행</th>
+					<th class="tc" scope="col">계좌번호</th>
+					<th class="tc" scope="col">예금주명</th>
+					<th class="tc" scope="col">금액</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="tc">우리은행</td>
+					<td class="tc">1002-365-987632</td>
+					<td class="tc">홍길동</td>
+					<td class="tr">530,256,000 원</td>
+				</tr>
+				<tr>
+					<td colspan="4" class="psnRel">
+						<p class="noFile">테이블 공통사용</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<td class="psnRel">
+				<p class="noFile">테이블 공통사용</p>
+			</td>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<div class="guideLink">
+		<a href="template_a.html">가이드 1</a>
+		<a href="template_b.html">가이드 2</a>
+		<a href="template_c.html">가이드 3</a>
+		<a href="template_d.html">가이드 4</a>
+	</div>
+
+</body>
+
+</html>

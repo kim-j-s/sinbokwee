@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+	<title>공통 템플릿</title>
+	<link href="../static/css/reset.css" rel="stylesheet" />
+	<link href="../static/css/common.css" rel="stylesheet" />
+	<link href="../static/css/contents.css" rel="stylesheet" />
+	<link href="../static/css/contents2.css" rel="stylesheet" />
+	<script type="text/javascript" src="../static/js/common.js"></script>
+	<script type="text/javascript" src="../static/js/ui.js"></script>
+	<!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement("header"); 
+        document.createElement("nav"); 
+        document.createElement("section"); 
+        document.createElement("article");
+        document.createElement("aside"); 
+        document.createElement("footer");
+    </script>
+<![endif]-->
+
+
+	<!-- 2018.05.16 -->
+	<script type="text/javascript" src="code/scripts/shCore.js"></script>
+	<script type="text/javascript" src="code/scripts/shBrushBash.js"></script>
+	<script type="text/javascript" src="code/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="code/scripts/shBrushJava.js"></script>
+	<script type="text/javascript" src="code/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="code/scripts/shBrushXml.js"></script>
+
+	<link type="text/css" rel="stylesheet" href="code/styles/shCore.css" />
+	<link type="text/css" rel="stylesheet" href="code/styles/shThemeDefault.css" />
+	<script type="text/javascript">
+		SyntaxHighlighter.all();
+	</script>
+	<!-- //2018.05.16 -->
+	<style>
+		body {
+			padding: 20px;
+			padding-top: 100px;
+		}
+
+		h1 {
+			font-size: 30px;
+			padding: 0 20px;
+		}
+
+		h2 {
+			padding: 20px 0;
+			margin-top: 20px;
+			border-top: 1px dashed #666666;
+			font-size: 20px;
+		}
+
+		.titH2,
+		.titH3 {
+			padding: 0;
+			margin: 0;
+			border: none;
+		}
+
+		.guideLink {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			padding: 10px;
+			background: #fff;
+			border-bottom: 1px solid #333;
+			z-index: 5;
+		}
+
+		.guideLink>a {
+			display: inline-block;
+			border: 1px solid #333;
+			padding: 5px;
+		}
+
+		.box {
+			margin-top: 20px;
+			border: 1px solid #E3E3E3
+		}
+	</style>
+</head>
+
+<body>
+	<h1>공통 템플릿</h1>
+
+	<h2>Step</h2>
+	<ol class="step" aria-label="신규신청 진행상태">
+		<li class="on" aria-current="step">
+			<span aria-label="1 사유선택"></span>
+		</li>
+		<li class="">
+			<span aria-label="2 약관동의"></span>
+		</li>
+		<li class="">
+			<span aria-label="3 정보입력"></span>
+		</li>
+		<li class="">
+			<span aria-label="4 신청완료"></span>
+		</li>
+	</ol>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<ol class="step" aria-label="신규신청 진행상태">
+				<li class="on" aria-current="step">
+					<span aria-label="1 사유선택"></span>
+				</li>
+				<li class="">
+					<span aria-label="2 약관동의"></span>
+				</li>
+				<li class="">
+					<span aria-label="3 정보입력"></span>
+				</li>
+				<li class="">
+					<span aria-label="4 신청완료"></span>
+				</li>
+			</ol>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>List - 1</h2>
+	<ul class="list1">
+		<li>내용이 길어지는 <br /> 2줄 케이스</li>
+		<li>내용이 길어지는 <br /> 2줄 케이스</li>
+		<li>내용이 길어지는 <br /> 2줄 케이스</li>
+	</ul>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<ul class="list1">
+				<li></li>
+			</ul>			
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>List - 2</h2>
+	<ul class="list2">
+		<li>내용이 길어지는 <br /> 2줄 케이스</li>
+		<li>내용이 길어지는 <br /> 2줄 케이스</li>
+		<li>내용이 길어지는 <br /> 2줄 케이스</li>
+	</ul>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<ul class="list2">
+				<li></li>
+			</ul>			
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>List - 2 color</h2>
+	<ul class="list2 color1">
+		<li>내용이 길어지는 <br /> 2줄 케이스</li>
+		<li>내용이 길어지는 <br /> 2줄 케이스</li>
+		<li>내용이 길어지는 <br /> 2줄 케이스</li>
+	</ul>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<ul class="list2 color1">
+				<li></li>
+			</ul>			
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>List - 3</h2>
+	<ul class="list3">
+		<li>내용이 길어지는 <br /> 2줄 케이스</li>
+		<li>내용이 길어지는 <br /> 2줄 케이스</li>
+		<li>내용이 길어지는 <br /> 2줄 케이스</li>
+	</ul>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<ul class="list3">
+				<li></li>
+			</ul>			
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>Num List - lv1</h2>
+	<ul class="listLv1">
+		<li>내용</li>
+		<li>내용</li>
+		<li>내용</li>
+	</ul>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<ul class="listLv1">
+				<li></li>
+			</ul>			
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+
+	<h2>TABLE</h2>
+	<div class="tblDiv">
+		<table>
+			<caption></caption>
+			<colgroup>
+				<col style="width:25%">
+				<col style="width:25%">
+				<col style="width:25%">
+				<col style="width:25%">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">헤더</th>
+					<th scope="col">헤더</th>
+					<th scope="col">헤더</th>
+					<th scope="col">헤더</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">내용</th>
+					<td>내용</td>
+					<td>내용</td>
+					<td>내용</td>
+				</tr>
+				<tr>
+					<th scope="row">내용</th>
+					<td>내용</td>
+					<td>내용</td>
+					<td>내용</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<div class="tblDiv">
+				<table>
+					<caption></caption>
+					<colgroup>
+						<col style="width:25%">
+						<col style="width:25%">
+						<col style="width:25%">
+						<col style="width:25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col"></th>
+							<th scope="col"></th>
+							<th scope="col"></th>
+							<th scope="col"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td scope="row" class="tit"></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>TABLE - 입력항목과 일반 정보성이 같이 있는 경우</h2>
+	<div class="tblDiv etc">
+		<table>
+			<caption></caption>
+			<colgroup>
+				<col style="width:25%">
+				<col style="">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">내용</th>
+					<td>
+						<div class="inputBox">
+							<input type="text" name="" id="" class="inp">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">내용</th>
+					<td>내용</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<div class="tblDiv etc">
+				<table>
+					<caption></caption>
+					<colgroup>
+						<col style="width:25%">
+						<col style="width:25%">
+						<col style="width:25%">
+						<col style="width:25%">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"></th>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+
+	<h2>TABLE - 순수 정보성 테이블</h2>
+	<div class="tblDiv only">
+		<table>
+			<caption></caption>
+			<colgroup>
+				<col style="width:25%">
+				<col style="">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">내용</th>
+					<td>내용</td>
+				</tr>
+				<tr>
+					<th scope="row">내용</th>
+					<td>내용</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<th scope="row">내용</th>
+				<td>내용</td>
+			</tfoot>
+		</table>
+	</div>
+	<div class="box">
+		<pre class="brush: html;">
+			<div class="tblDiv only">
+				<table>
+					<caption></caption>
+					<colgroup>
+						<col style="width:25%">
+						<col style="">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"></th>
+							<td></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<th scope="row"></th>
+						<td></td>
+					</tfoot>
+				</table>
+			</div>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>TABLE - 보더 없음</h2>
+	<div class="tblDiv brNoty">
+		<table>
+			<caption></caption>
+			<colgroup>
+				<col style="width:25%">
+				<col style="">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">내용</th>
+					<td>내용</td>
+				</tr>
+				<tr>
+					<th scope="row">내용</th>
+					<td>내용</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="box">
+		<pre class="brush: html;">
+			<div class="tblDiv brNoty">
+				<table>
+					<caption></caption>
+					<colgroup>
+						<col style="width:25%">
+						<col style="">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"></th>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>TABLE - 보더 없음 left 패딩없음</h2>
+	<div class="tblDiv brNoty2">
+		<table>
+			<caption></caption>
+			<colgroup>
+				<col style="width:25%">
+				<col style="">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">내용</th>
+					<td>내용</td>
+				</tr>
+				<tr>
+					<th scope="row">내용</th>
+					<td>내용</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="box">
+		<pre class="brush: html;">
+			<div class="tblDiv brNoty2">
+				<table>
+					<caption></caption>
+					<colgroup>
+						<col style="width:25%">
+						<col style="">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"></th>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>TABLE - top 보더 컬러</h2>
+	<div class="tblDiv brNoty brtLine3">
+		<table>
+			<caption></caption>
+			<colgroup>
+				<col style="width:25%">
+				<col style="">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">내용</th>
+					<td>내용</td>
+				</tr>
+				<tr>
+					<th scope="row">내용</th>
+					<td>내용</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="box">
+		<pre class="brush: html;">
+			<div class="tblDiv brNoty2 brtLine3">
+				<table>
+					<caption></caption>
+					<colgroup>
+						<col style="width:25%">
+						<col style="">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"></th>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+
+	<h2>dl - 정보입력</h2>
+	<dl class="tblDl">
+		<dt>
+			<span class="label">이름</span>
+		</dt>
+		<dd>
+			<div class="inputBox">
+				<input type="text" name="" id="" class="inp" readonly="readonly" title="이름" value="홍길동">
+			</div>
+		</dd>
+		<dt>
+			<span class="label">주민등록번호</span>
+		</dt>
+		<dd>
+			<div class="inputBox">
+				<input type="password" name="" id="" class="inp" readonly="readonly">
+			</div>
+		</dd>
+		<dt>
+			<label for="idchk">ID</label>
+		</dt>
+		<dd>
+			<div class="inpGroup1">
+				<div class="ele">
+					<div class="inputBox">
+						<input type="text" name="" id="idchk" class="inp">
+					</div>
+				</div>
+				<div class="ele wd90">
+					<button type="button" class="btn ty5"><span>중복검사</span></button>
+				</div>
+			</div>
+		</dd>
+	</dl>
+	<!-- //souce code 뷰어 -->
+
+	<h2>dl - 정보입력 보더 추가 타입</h2>
+	<dl class="tblDl etcLine">
+		<dt>
+			<span class="label">이름</span>
+		</dt>
+		<dd>
+			<div class="inputBox">
+				<input type="text" name="" id="" class="inp" readonly="readonly" title="이름" value="홍길동">
+			</div>
+		</dd>
+		<dt>
+			<span class="label">주민등록번호</span>
+		</dt>
+		<dd>
+			<div class="inputBox">
+				<input type="password" name="" id="" class="inp" readonly="readonly">
+			</div>
+		</dd>
+		<dt>
+			<label for="idchk">ID</label>
+		</dt>
+		<dd>
+			<div class="inpGroup1">
+				<div class="ele">
+					<div class="inputBox">
+						<input type="text" name="" id="idchk" class="inp">
+					</div>
+				</div>
+				<div class="ele wd90">
+					<button type="button" class="btn ty5"><span>중복검사</span></button>
+				</div>
+			</div>
+		</dd>
+	</dl>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<dl class="tblDl">
+				<dt></dt>
+				<dd></dd>
+			</dl>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+
+	<h2>dl - dd 패딩 없음 </h2>
+	<dl class="tblDl etcIn">
+		<dt>
+			<span class="label">이름</span>
+		</dt>
+		<dd>홍길동</dd>
+		<dt>
+			<span class="label">주민등록번호</span>
+		</dt>
+		<dd>920201-*******</dd>
+		<dt>
+			<label for="idchk">ID</label>
+		</dt>
+		<dd>test1</dd>
+	</dl>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<dl class="tblDl etcIn">
+				<dt></dt>
+				<dd></dd>
+			</dl>		
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<div class="guideLink">
+		<a href="template_a.html">가이드 1</a>
+		<a href="template_b.html">가이드 2</a>
+		<a href="template_c.html">가이드 3</a>
+		<a href="template_d.html">가이드 4</a>
+	</div>
+
+</body>
+
+</html>

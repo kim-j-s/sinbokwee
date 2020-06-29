@@ -1,0 +1,156 @@
+@charset "utf-8";
+*{-webkit-box-sizing:border-box;box-sizing:border-box;}
+html, body, div, p, span, em, u, i, table, caption, thead, tbody, tfoot, tr, th, td, form, fieldset, label, legend, textarea, input, button, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, img, a {padding:0;margin:0;border:0;;color:#666;}
+body {position:relative;color:#595757;font-size:11px;font-family:"Nanum Gothic","NanumGothic",Arial;font-weight:normal;-webkit-text-size-adjust:none;}
+ul, ol, li, dl, dt, dd {list-style-type:none;}
+table {empty-cells:show;}
+table, tbody, tfoot, thead, tr, th, td {border-collapse:separate;border-spacing:0;}
+select {font-size:14px;vertical-align:middle;padding:0;margin:0;}
+legend {display:none;position:absolute;visibility:hidden;}
+caption {visibility:hidden;width:0px;height:0px;overflow:hidden;font-size:0px;line-height:0px;}
+img {vertical-align:top;}
+optgroup {font-style:normal;font-size:0px;height:0px;line-height:0px;}
+input {box-sizing:border-box;-webkit-box-sizing:border-box;	border-radius:0;} /* -webkit-appearance:none; */
+textarea {width:90%;background-color:#f5f5f5; border-radius:3px; border-top:solid 1px #cacaca; border-left:solid 1px #cacaca; -webkit-box-shadow:-2px 0px 0px -3px #d3d3d3; box-shadow:-2px 0px 0px -3px #d3d3d3}
+hr {border-top:1px solid #000;}
+html {
+    /* -webkit-touch-callout:none; /* 화면을 길게 누르고 있을때 뜨는 팝업이나 액션시트를 제어합니다. none으로 설정하면 아무리 길게 눌러도 아무것도 뜨지 않습니다. */
+	/*-webkit-user-select:none; /* 텍스트나 이미지를 선택할 수 있게 하는 여부를 제어합니다. none으로 설정하면 텍스트나 이미지를 선택할 수 없습니다. */
+	/*-webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+	 링크를 터치했을때 나오는 기본 영역의 색상을 제어합니다.
+	rgba(0, 0, 0, 0)은 색이 없는 투명을 의미하므로 위 색상으로 세팅하면 링크를 터치했을때 아무것도 표시되지 않습니다.
+	transparent를 넣을 수도 있겠지만, 이런 경우에는 iOS에서만 동작하고 Android에선 동작하지 않습니다.}*/
+}
+
+html, body {height:100%;}
+body{margin:0;padding:0;}
+
+input{-webkit-appearance:none; -moz-appearance:none; appearance:none;}
+i{font-style:normal;}
+
+
+/* body css */
+#container{width:100%; height:100%; position:relative; -webkit-box-sizing:border-box; box-sizing:border-box; background:#fff; overflow:hidden;}
+#container .wrap video {width:100%; height:100%;}
+
+.dn {display:none;}
+
+
+/* mobile */
+/* Pc Dimmed Play Btn 
+.mobilePlayBtn{position:absolute;display:none;top:0px;left:0px;width:1024px;height:605px;z-index:200;background:rgba(0,0,0,0.8)}
+.mobilePlayBtn span{font-size:180px;color:#fff;display:inline-block;position:absolute;top:170px;left:430px;}
+*/
+/* Pc Dimmed Play Btn */
+.mobilePlayBtn {position:absolute; display:none; top:0px; left:0px; width:100%; height:425px; z-index:200; background:rgba(0,0,0,0.8);}
+.mobilePlayBtn span {display:inline-block; position:absolute; /* top:170px; left:430px; */ top:50%; left:50%; font-size:180px; color:#fff; -webkit-transform:translate(-50%, -50%); transform:translate(-50%, -50%);}
+/* Pc*/
+
+.mobilePlayBtn span i {color:#fff;}
+.mobile .mobilePlayBtn {position:absolute; display:none; top:0px; left:0px; background:rgba(255,255,255,0.8) url("../../img/content/mobileBtn.png") center no-repeat; width:1024px; height:605px; z-index:200; background-size:100%}
+.mobile .mobilePlayBtn span {display:none;}
+
+/* 전체 화면 css */
+:-webkit-full-screen {}
+:-ms-fullscreen {}
+:fullscreen {}
+:-webkit-full-screen video {width:100% !important; height:100% !important; position:fixed; top:0 !important; left:0 !important; margin:0 !important; z-index:99; background-color:#000;}
+:-ms-fullscreen video {width:100% !important; height:100% !important; position:fixed; top:0 !important; left:0 !important; margin:0 !important; z-index:99; background-color:#000;}
+:fullscreen video {width:100% !important; height:100% !important; position:fixed; top:0 !important; left:0 !important; margin:0 !important; z-index:99; background-color:#000;}
+:-ms-fullscreen video {width:100% !important; height:100% !important; position:fixed; top:0 !important; left:0 !important; margin:0 !important; z-index:99; background-color:#000;}
+:-webkit-full-screen video {width:100% !important; height:100% !important; position:fixed; top:0 !important; left:0 !important; margin:0 !important; z-index:99; background-color:#000;}
+
+
+/* bottom css */
+@charset "utf-8";
+
+.fa{display:inline !important; vertical-align:middle;}
+
+#bottom {width:100%; height:45px; position:absolute; bottom:0px; z-index:100; background-color:#113053; padding:0 30px; text-align:center;}
+#bottom .inner {display:inline-block;}
+#bottom button i {color:#fff;}
+
+#bottom .rateGroup button {background:none !important;}
+#bottom button {cursor:pointer}
+#bottom .soundGroup {position:relative; float:left; z-index:10; padding-left:10px;}
+#bottom .videoGroup {position:relative; float:left; z-index:10; padding-left:5px; margin-left:5px;}
+#bottom .soundGroup .btn,
+#bottom .wordGroup .btn,
+#bottom .menuGroup .btn,
+#bottom .progressGroup .btn {width:30px; height:40px; float:left;}
+
+#bottom .videoGroup .btn {width:25px; height:40px; float:left; margin-left:10px;}
+
+#bottom .videoGroup .btn button,
+#bottom .soundGroup .btn button,
+#bottom .wordGroup .btn button,
+#bottom .menuGroup .btn button,
+#bottom .videoGroup .btn button i,
+#bottom .soundGroup .btn button i,
+#bottom .wordGroup .btn button i,
+#bottom .menuGroup .btn button i {width:100%; height:100%; color:#fff; font-size:25px; background:none;}
+#bottom .progressGroup .btn button:hover i,
+#bottom .progressGroup .btn button.on i,
+#bottom .videoGroup .btn button:hover i,
+#bottom .videoGroup .btn button.on i,
+#bottom .soundGroup .btn button:hover i,
+#bottom .soundGroup .btn button.on i,
+#bottom .wordGroup .btn button:hover i,
+#bottom .wordGroup .btn button.on i,
+#bottom .menuGroup .btn button:hover i,
+#bottom .menuGroup .btn button.on i {color:#04cbd4;}
+
+#bottom.nf .videoGroup .btn.fullBtn {display:none;}
+#bottom .soundGroup .btn button i {font-size:25px;}
+#bottom .soundGroup .soundbar {height:40px; padding-left:5px; float:left;}
+#bottom .soundGroup .soundbar .volume {position:relative; width:60px; height:100%; float:left; cursor:pointer; background:transparent;}
+#bottom .soundGroup .soundbar .volume .volumeBar {position:absolute; top:20px; left:0; z-index:10; display:block; height:2px; background-color:#04cbd4;}
+#bottom .soundGroup .soundbar .volume .volumeBar .p_circle {position:absolute; right:-9px; bottom:-9px; width:17px; height:17px; background:url(../images/media/jog1.png) no-repeat;}
+
+#bottom .pageGroup {position:absolute; right:35px; height:40px; padding-top:8px;}
+#bottom .pageGroup div {float:left; line-height:40px;}
+#bottom .pageGroup button {background:transparent;}
+#bottom .pageGroup button i {font-size:45px;}
+#bottom .pageGroup .prevPage,
+#bottom .pageGroup .nextPage {width:30px; height:40px; margin-top:-10px;}
+#bottom .pageGroup .totalPageNum,
+#bottom .pageGroup .currentPageNum {width:26px; height:40px; margin-top:-11px; font-size:18px; color:#fff; text-align:center; vertical-align:bottom; font-style:oblique;}
+#bottom .pageGroup .totalPageNum {margin-top:-3px;}
+#bottom .pageGroup .currentPageNum {font-weight:bold;}
+#bottom .pageGroup .pagebar {width:10px; margin-top:-3px; font-size:14px; color:#fff; text-align:center; font-style:oblique;}
+#bottom .pageGroup .currentPageNum.hover {color:#fff;}
+#bottom .pageGroup .totalPageNum.hover {color:#c5c5c5;}
+#bottom .pageGroup div.prevPage button.prevPageBtn.first,
+#bottom .pageGroup div.nextPage button.nextPageBtn.last {cursor:default;}
+#bottom .pageGroup div.prevPage button,
+#bottom .pageGroup div.nextPage button {width:100%; height:100%;}
+
+#bottom .rateGroup ul li button:hover,
+#bottom .rateGroup ul li button.on {color:#70be46;}
+
+#bottom .progressGroup {position:relative; top:0; height:40px; padding-left:5px; -webkit-box-sizing:border-box; box-sizing:border-box; float:left;}
+#bottom .progressGroup div {float:left; margin-left:10px;}
+#bottom .progressGroup div:first-child {margin-left:0;}
+#bottom .progressGroup .progress {position:relative; width:320px; height:40px;}
+#bottom .progressGroup .progress .progressbg {position:absolute; top:20px; left:10px; width:100%; height:4px; background:#eee;}
+#bottom .progressGroup .progress .progress-bar {position:relative; float:left; width:0%; height:4px; margin-top:20px; background:#04cbd4;}
+#bottom .progressGroup .progress .progress-bar .p_circle {position:absolute; right:-15px; bottom:-10px; width:35px; height:25px; background:url(../images/media/jog2.png) no-repeat;}
+#bottom .progressGroup .time {height:35px; margin-top:2px; margin-left:30px; color:#888;}
+#bottom .progressGroup .time span {height:40px; font-size:12px; letter-spacing:-0.5px; line-height:38px; color:#fff;}
+#bottom .progressGroup .time span.currentTime {color:#fff;}
+#bottom .progressGroup button {width:100%; height:100%; color:#fff; font-size:15px; background:none;}
+#bottom .nextClick {position:absolute; top:-60px; right:0px; z-index:100; display:none; width:120px; height:70px; background:url(../../ca/next.png) 0 0 no-repeat; background-size:100%; cursor:pointer;}
+#bottom .nextClick.end {background:url(../../ca/end.png) 0 0 no-repeat; background-size:100%;}
+#bottom .progressGroup .marker{position:absolute; top:6px; width:18px; height:12px; margin:0; background:url('../../img/bottom/playbar_marker.png') 0 0px no-repeat;}
+#bottom .progressGroup .marker button {display:block; width:100%; height:100%;}
+
+.scrollBox #display {position:absolute; left:0; bottom:45px; z-index:99; display:block; width:100%; height:55px; padding:2px 100px; text-align:left; color:#fff; font-size:16px; line-height:24px; background-color:rgba( 0, 0, 0, 0.7); word-break:keep-all; overflow-y:scroll;}
+
+#display {height:55px; color:#fff; font-size:16px; line-height:24px;}
+#dis_close_btn {position:absolute; top:-45px; right:10px; width:21px; height:21px; background-color:transparent;}
+
+.mobdown {position:absolute; display:none; top:-48px; right:10px; z-index:99; font-size:30px; color:#fff;}
+
+.mobdown i {color:#fff;}
+
+.mobile .mobdown {display:block;}

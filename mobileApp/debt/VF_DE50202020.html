@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+	<title>신용회복위원회-깨끗하고 밝은 신용사회를 만들어 가겠습니다.</title>
+	<link rel="stylesheet" href="../static/css/reset.css" />
+	<link rel="stylesheet" href="../static/css/common.css" />
+	<link rel="stylesheet" href="../static/css/contents.css" />
+	<script type="text/javascript" src="../static/js/common.js"></script>
+	<script type="text/javascript" src="../static/js/ui.js"></script>
+</head>
+
+<body>
+	<div class="popwrap full" data-popup="popup" style="display: block;">
+		<button type="button" class="btnClose" data-popup-close="popup">닫기</button>
+		<!-- contents -->
+		<div class="popCon">
+			<!-- 2019-08-27 문구수정 -->
+			<h2 class="titH2">채무조정합의서</h2>
+			<h3 class="titH3">기본정보</h3>
+			<div class="tblDiv brNoty brtLine3">
+				<table>
+					<caption>채무조정합의서 기본정보 테이블</caption>
+					<colgroup>
+						<col style="width:125px">
+						<col style="">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">신청인</th>
+							<td>홍길동</td>
+						</tr>
+						<tr>
+							<th scope="row">조정후 채무</th>
+							<td>우리은행</td>
+						</tr>
+						<tr>
+							<th scope="row">상환기간</th>
+							<td>12개월</td>
+						</tr>
+						<!-- 2019-10-02 수정 -->
+						<tr>
+							<th scope="row">매월 납입일</th>
+							<td>25일</td>
+						</tr>
+						<tr>
+							<th scope="row">납입시작일</th>
+							<td>2019년 05월 25일</td>
+						</tr>
+						<!-- //2019-10-02 수정 -->
+						<tr>
+							<th scope="row">월납입액</th>
+							<td>10일</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<h3 class="titH3 mt25">납입계좌</h3>
+			<div class="tblDiv brNoty brtLine3">
+				<table>
+					<caption>채무조정합의서 납입계좌 테이블</caption>
+					<colgroup>
+						<col style="width:125px">
+						<col style="">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">납입계좌</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">CMS 자동이체</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">납입계좌잔액</th>
+							<td></td>
+						</tr>
+						<tr>
+							<!-- 2019-10-16 수정 -->
+							<th scope="row">예납금 부족금액</th>
+							<!--// 2019-10-16 수정 -->
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">예납금납입기한일</th>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- 2019-10-02 추가 -->
+			<h3 class="titH3 mt25">월 납입액</h3>
+			<div class="tblDiv brNoty brtLine3">
+				<table>
+					<caption>월 납입액 테이블</caption>
+					<colgroup>
+						<col style="width:125px">
+						<col style="">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">XX회</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">XX회</th>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- //2019-10-02 추가 -->
+			<ul class="list2 color1 mt20">
+				<li class="ftsz13">다음의 빈칸을 클릭하여 내용을 확인하신 후 하단의 확인함을 선택하세요.</li>
+			</ul>
+			<div class="colorBox mt5">
+				<div class="mb10">
+					귀하의 조정 후 채무액은
+					<div class="valueArea">
+						<button type="button" class="btn ty10" onclick="txtBtn(this)"><span>확인</span></button>
+						<span class="value">000,000,000,000,000,000,000,000,000,000,000,000,000,000,000원</span>
+					</div>
+					입니다.
+				</div>
+				<div class="mb10">
+					귀하의 상환기간은
+					<div class="valueArea">
+						<button type="button" class="btn ty10" onclick="txtBtn(this)"><span>확인</span></button>
+						<span class="value">000개월</span>
+					</div>
+					입니다.
+				</div>
+				<div class="mb10">
+					귀하의 월 납입액은
+					<div class="valueArea">
+						<button type="button" class="btn ty10" onclick="txtBtn(this)"><span>확인</span></button>
+						<span class="value">000,000원</span>
+					</div>
+					입니다.
+				</div>
+				<div>
+					귀하의 납입 시작일은
+					<div class="valueArea">
+						<button type="button" class="btn ty10" onclick="txtBtn(this)"><span>확인</span></button>
+						<span class="value">0000년 00월 00일</span>
+					</div>
+					입니다.
+				</div>
+			</div>
+			<p class="confirmTxt mt30">위 내용을 확인하셨습니까?</p>
+			<div class="btnBox bBox2 mt70">
+				<!-- 2019-08-27 문구수정 -->
+				<button type="button" class="btn ty1"><span>합의서 체결 중단</span></button>
+				<button type="button" class="btn ty3"><span>확인</span></button>
+			</div>
+		</div>
+		<!-- //contents -->
+	</div>
+</body>
+
+</html>

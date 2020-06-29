@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+	<title>신용회복위원회-깨끗하고 밝은 신용사회를 만들어 가겠습니다.</title>
+	<link rel="stylesheet" href="../static/css/reset.css" />
+	<link rel="stylesheet" href="../static/css/common.css" />
+	<link rel="stylesheet" href="../static/css/contents.css" />
+	<script type="text/javascript" src="../static/js/common.js"></script>
+	<script type="text/javascript" src="../static/js/ui.js"></script>
+</head>
+
+<body>
+	<!-- 주소 검색 전 -->
+	<!-- 2019-10-04 전체수정 -->
+	<div class="popwrap" data-popup="popup" style="display: block;" aria-hidden="false">
+		<button type="button" class="btnClose" data-popup-close="popup">닫기</button>
+		<!-- contents -->
+		<div class="popCon">
+			<h2 class="titH2">주소 검색</h2>
+			<div class="tabWrap">
+				<ul class="tabBar" id="tabMenu" role="tablist">
+					<li class="on">
+						<a href="#tab_cont1" role="tab" aria-selected="true">
+							<span>도로명 주소</span>
+						</a>
+					</li>
+					<li>
+						<a href="#tab_cont2" role="tab" aria-selected="false">
+							<span>지번 주소</span>
+						</a>
+					</li>
+				</ul>
+				<div id="tab_cont1" class="tabCon" role="tabpanel">
+					<!-- 2019-10-22 수정 -->
+					<p class="htxt">찾고자 하는 <span class="color1 ftsz14">주소를 입력</span> 후 검색해 주십시오.</p>
+					<p class="adGuide"><span class="tit">ex)</span> 서울특별시 중구 세종대로 124 한국프레스센터 6층<br> - 도로명 + 건물번호 (예 : 세종대로 + 124)</p>
+						<!--// 2019-10-22 수정 -->
+						<dl class="tblDl">
+							<dt>
+								<label for="road">도로명 <span class="necessary">필수 입력</span></label>
+							</dt>
+							<dd>
+								<div class="inputBox">
+									<input type="text" name="" id="road" class="inp" title="도로명" placeholder="도로명">
+								</div>
+							</dd>
+							<dt>
+								<label for="building">건물번호</label>
+							</dt>
+							<dd class="clear mb30">
+								<div class="ele">
+									<div class="inputBox">
+										<input type="text" name="" id="building1" class="inp" title="건물번호1" placeholder="151">
+									</div>
+								</div>
+								<p class="eletxt"> - </p>
+								<div class="ele">
+									<div class="inputBox">
+										<input type="text" name="" id="building2" class="inp" title="건물번호2" placeholder="18">
+									</div>
+								</div>
+							</dd>
+						</dl>
+						<p class="blTxt4 mt20 mb15">시/군/구를 선택해 주십시오.</p>
+				</div>
+				<div id="tab_cont2" class="tabCon" role="tabpanel">
+					<!-- 2019-10-22 수정 -->
+					<p class="htxt">찾고자 하는 <span class="color1 ftsz14">주소를 입력</span> 후 검색해 주십시오.</p>
+					<p class="adGuide"><span class="tit">ex)</span> 서울특별시 중구 태평로 1가 25번지 한국프레스센터 6층<br>- 동/읍/면/리 (예 : 태평로1가)<br>- 건물명, 아파트명 (예:프레스센터)</p>
+						<!--// 2019-10-22 수정 -->
+						<dl class="tblDl">
+							<dt>
+								<label for="city3">읍/면/동 <span class="necessary">필수 입력</span></label>
+							</dt>
+							<dd>
+								<div class="inputBox">
+									<input type="text" name="" id="city3" class="inp" title="읍/면/동" placeholder="읍/면/동">
+								</div>
+								<p class="blTxt4 mt20 mb15">읍/면/동 입력해 주십시오.</p>
+							</dd>
+						</dl>
+				</div>
+			</div>
+		</div>
+		<!-- //contents -->
+		<!-- footer -->
+		<div class="popFoot">
+			<div class="btnBox">
+				<button type="button" class="btn ty6" data-popup-open="popup-2"><span>검색</span></button>
+			</div>
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //주소 검색 전 -->
+
+	<!-- 주소 검색 후 1 -->
+	<div class="popwrap full" data-popup="popup-2" aria-hidden="true">
+		<button type="button" class="btnClose" data-popup-close="popup-2">닫기</button>
+		<!-- contents -->
+		<div class="popCon">
+			<h2 class="titH2">주소 검색</h2>
+			<!-- 주소 리스트 -->
+			<div class="addList">
+				<p class="txtNum mt25">총 <span class="color1">10</span> 개</p>
+				<div class="tblDiv mt10">
+					<table>
+						<caption>검색된 주소</caption>
+						<colgroup>
+							<col style="width:70px">
+							<col style="">
+							<col style="width:80px">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">구분</th>
+								<th scope="col">주소</th>
+								<th scope="col">우편번호</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td scope="row" class="tc">도로명</td>
+								<td>
+									<a href="" class="addTxt" title="주소 선택">서울특별시 종로구 청와대로 1 (세종로, )</a>
+								</td>
+								<td class="tc">
+									<a href="" class="addTxt" title="우편번호 선택">12345</a>
+								</td>
+							</tr>
+							<tr>
+								<td scope="row" class="tc">도로명</td>
+								<td>
+									<a href="" class="addTxt" title="주소 선택">서울특별시 종로구 사직로 161 (경복궁)</a>
+								</td>
+								<td class="tc">
+									<a href="" class="addTxt" title="우편번호 선택">12333</a>
+								</td>
+							</tr>
+							<tr>
+								<td scope="row" class="tc">도로명</td>
+								<td>
+									<a href="" class="addTxt" title="주소 선택">서울특별시 종로구 청와대로 1 (세종로, )</a>
+								</td>
+								<td class="tc">
+									<a href="" class="addTxt" title="우편번호 선택">22222</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="btnBox pt20">
+					<button type="button" class="btnMoretxt mt0"><span class="txt1">더보기</span> ( <span class="txt2">1</span> / 299)</button>
+				</div>
+				<div class="colorBox1 mt20">
+					<dl class="tblDl">
+						<dt class="pt5">
+							<label for="address" class="regular">주소 입력</label>
+						</dt>
+						<dd class="pb0">
+							<div class="inputBox">
+								<input type="text" name="" id="address" class="inp" title="상세주소" placeholder="상세주소">
+							</div>
+							<p class="blTxt4">주소를 선택 후 상세 주소를 입력하여 주십시오.</p>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<!-- 주소 리스트 -->
+			<!-- 검색결과 없을 시 
+		<div class="addList">
+			<div class="noneTxt">
+				<p class="txt">검색 결과가 없습니다.<span>지역명을 다시 입력해 주십시오.</span></p>
+			</div>
+		 검색결과 없을 시 -->
+			<div class="btnBox2">
+				<button type="button" class="btn ty3" data-popup-open="popup-3" data-popup-close="popup-2"><span>확인</span></button>
+			</div>
+		</div>
+	</div>
+	<!-- //주소 검색 후 1 -->
+
+	<!-- 주소 검색 후 2 -->
+	<div class="popwrap full" data-popup="popup-3" aria-hidden="true">
+		<button type="button" class="btnClose" data-popup-close="popup-3">닫기</button>
+		<!-- contents -->
+		<div class="popCon">
+			<h2 class="titH2">주소 검색</h2>
+			<!-- 주소 리스트 -->
+			<div class="addList">
+				<div class="tblDiv only mt40">
+					<table>
+						<caption>검색된 주소</caption>
+						<colgroup>
+							<col style="width:35px">
+							<col style="width:85px">
+							<col style="">
+							<col style="width:70px">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row" class="tc" rowspan="2">
+									<!-- 2019-09-19 single 추가 -->
+									<div class="radioBox single">
+										<input type="radio" id="rdo1" name="" title="선택"><label for="rdo1"></label>
+									</div>
+								</th>
+								<th>도로명 주소</th>
+								<td>서울특별시 종로구 청와대로 1 (세종로, ) 101동</td>
+								<td class="tc">12345</td>
+							</tr>
+							<tr>
+								<th scope="row">입력한 주소</th>
+								<td>서울특별시 종로구 세종로 1 101동</td>
+								<td class="tc">12345</td>
+							</tr>
+							<tr>
+								<th scope="row" class="tc brbLeno" rowspan="2">
+									<!-- 2019-09-19 single 추가 -->
+									<div class="radioBox single">
+										<input type="radio" id="rdo2" name="" title="선택"><label for="rdo2"></label>
+									</div>
+								</th>
+								<th>도로명 주소</th>
+								<td>서울특별시 종로구 청와대로 1 (세종로, ) 101동</td>
+								<td class="tc">12345</td>
+							</tr>
+							<tr>
+								<th scope="row">입력한 주소</th>
+								<td>서울특별시 종로구 세종로 1 101동</td>
+								<td class="tc">12345</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- 주소 리스트 -->
+			<div class="btnBox2 bBox2">
+				<button type="button" class="btn ty1" data-popup-close="popup-3"><span>다시 검색</span></button>
+				<button type="button" class="btn ty3"><span>확인</span></button>
+			</div>
+		</div>
+	</div>
+	<!-- //주소 검색 후 2 -->
+	<!-- //2019-10-04 전체수정 -->
+</body>
+
+</html>

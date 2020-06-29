@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta name="format-detection" content="telephone=no">
+	<title>신용회복위원회-깨끗하고 밝은 신용사회를 만들어 가겠습니다.</title>
+	<link href="../static/css/reset.css" rel="stylesheet" />
+	<link href="../static/css/common.css" rel="stylesheet" />
+	<link href="../static/css/contents.css" rel="stylesheet" />
+	<script type="text/javascript" src="../static/js/common.js"></script>
+	<script type="text/javascript" src="../static/js/ui.js"></script>
+	<!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement("header"); 
+        document.createElement("nav"); 
+        document.createElement("section"); 
+        document.createElement("article"); 
+        document.createElement("footer");
+    </script>
+<![endif]-->
+</head>
+
+<body>
+	<div id="skip_nav">
+		<a href="#container">본문바로가기</a>
+		<a href="#gnb">전체메뉴바로가기</a>
+		<a href="#footer">하단바로가기</a>
+	</div>
+
+	<button type="button" class="btn ty1" data-popup-open="popup-1"><span>팝업열기</span></button>
+
+	<!-- layer popup -->
+	<div class="popUp" data-popup="popup-1">
+		<div class="popWrap maxwd1040">
+			<div class="popCon">
+				<button type="button" class="btnClose" data-popup-close="popup-1">닫기</button>
+				<!-- 2019-08-23 수정 -->
+				<h3>채무조정합의서</h3>
+				<!--// 2019-08-23 수정 -->
+				<div class="popScroll">
+
+					<h4 class="titH3">기본정보</h4>
+					<div class="tblDiv only brdTop ty2">
+						<table>
+							<caption>기본정보 내역</caption>
+							<colgroup>
+								<col style="width:156px">
+								<col style="">
+								<col style="width:156px">
+								<col style="">
+							</colgroup>
+							<!-- 2019-10-02 수정 -->
+							<tbody>
+								<tr>
+									<th scope="row">신청인</th>
+									<td>홍길동</td>
+									<th scope="row">조정후 채무</th>
+									<td>000,000,000 원</td>
+								</tr>
+								<tr>
+									<th scope="row">상환기간</th>
+									<td>00개월</td>
+									<th scope="row">매월 납입일</th>
+									<td>00일</td>
+								</tr>
+								<tr>
+									<th scope="row">납입 시작일</th>
+									<td colspan="3">2020.12.01</td>
+								</tr>
+							</tbody>
+							<!--// 2019-10-02 수정 -->
+						</table>
+					</div>
+
+					<h4 class="titH3">납입계좌</h4>
+					<div class="tblDiv only brdTop ty2">
+						<table>
+							<caption>납입계좌 내역</caption>
+							<colgroup>
+								<col style="width:156px">
+								<col style="">
+								<col style="width:156px">
+								<col style="">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">납입계좌</th>
+									<td colspan="3">CMS 자동이체를 등록해주세요</td>
+								</tr>
+								<tr>
+									<th scope="row">CMS 자동이체</th>
+									<td>-</td>
+									<!-- 2019-10-16 수정 -->
+									<th scope="row">예납금 부족금액</th>
+									<!--// 2019-10-16 수정 -->
+									<td>00,000,000 원</td>
+								</tr>
+								<tr>
+									<th scope="row">예납금 납기 기한일</th>
+									<td>2020.12.01</td>
+									<!-- 2019-10-02 수정 -->
+									<th scope="row">납입 계좌잔액</th>
+									<!--// 2019-10-02 수정 -->
+									<td>00,000,000 원</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<!-- 2019-10-02 추가 -->
+					<h4 class="titH3">월 납입액</h4>
+					<div class="tblDiv only brdTop ty2">
+						<table>
+							<caption>월 납입액 내역</caption>
+							<colgroup>
+								<col style="width:156px">
+								<col style="">
+								<col style="width:156px">
+								<col style="">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">XX 회</th>
+									<td>00,000,000 원</td>
+									<th scope="row">XX 회</th>
+									<td>00,000,000 원</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!--// 2019-10-02 추가 -->
+
+					<p class="blTxt5 mt38">다음의 빈칸을 클릭하여 내용을 확인하신 후 하단의 확인함을 선택하세요.</p>
+					<!-- 2019-08-01 수정 -->
+					<div class="colorBox other mt10 tl pl100">
+						<div class="ele">
+							<span class="dpib wd170 color4">귀하의 조정 후 채무액은</span>
+							<div class="valueArea">
+								<button type="button" class="btn ty10" onclick="txtBtn(this)"><span>확인</span></button>
+								<span class="value wdfull tr pr18 regular">000,000,000 원</span>
+							</div>
+							<span class="dpib wd150 color4">입니다.</span>
+						</div>
+						<div class="ele">
+							<span class="dpib wd170 color4">귀하의 상환기간은</span>
+							<div class="valueArea">
+								<button type="button" class="btn ty10" onclick="txtBtn(this)"><span>확인</span></button>
+								<span class="value wdfull tr pr18 regular">000개월</span>
+							</div>
+							<span class="dpib wd150 color4">입니다.</span>
+						</div>
+						<div class="ele">
+							<span class="dpib wd170 color4">귀하의 월 납입액은</span>
+							<div class="valueArea">
+								<button type="button" class="btn ty10" onclick="txtBtn(this)"><span>확인</span></button>
+								<span class="value wdfull tr pr18 regular">
+								유예기간 동안 24개월 이고, 원(리)금 상환기간동안은 24개월
+							</span>
+							</div>
+							<span class="dpib wd150 color4">입니다.</span>
+						</div>
+						<div class="ele">
+							<span class="dpib wd170 color4">귀하의 납입 시작일은</span>
+							<div class="valueArea">
+								<button type="button" class="btn ty10" onclick="txtBtn(this)"><span>확인</span></button>
+								<span class="value wdfull tr pr18 regular">0000년 00월 00일</span>
+							</div>
+							<span class="dpib wd150 color4">입니다.</span>
+						</div>
+					</div>
+					<!--// 2019-08-01 수정 -->
+					<p class="confirmTxt mt38">위 내용을 확인하셨습니까?</p>
+				</div>
+				<!-- 2019-08-23 수정 -->
+				<div class="btnBox bdtNone pt0 mt40">
+					<button type="button" class="btn ty1"><span>채무조정합의서 체결 중단</span></button>
+					<button type="button" class="btn ty3"><span>확인</span></button>
+				</div>
+				<!--// 2019-08-23 수정 -->
+			</div>
+		</div>
+	</div>
+	<!-- //layer popup -->
+
+
+	<style type="text/css">
+		.popUp {
+			display: block
+		}
+	</style>
+</body>
+
+</html>

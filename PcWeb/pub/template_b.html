@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+	<title>공통 템플릿</title>
+	<link href="../static/css/reset.css" rel="stylesheet" />
+	<link href="../static/css/common.css" rel="stylesheet" />
+	<link href="../static/css/contents.css" rel="stylesheet" />
+	<link href="../static/css/contents2.css" rel="stylesheet" />
+	<script type="text/javascript" src="../static/js/common.js"></script>
+	<script type="text/javascript" src="../static/js/ui.js"></script>
+	<!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement("header"); 
+        document.createElement("nav"); 
+        document.createElement("section"); 
+        document.createElement("article");
+        document.createElement("aside"); 
+        document.createElement("footer");
+    </script>
+<![endif]-->
+
+
+	<!-- 2018.05.16 -->
+	<script type="text/javascript" src="code/scripts/shCore.js"></script>
+	<script type="text/javascript" src="code/scripts/shBrushBash.js"></script>
+	<script type="text/javascript" src="code/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="code/scripts/shBrushJava.js"></script>
+	<script type="text/javascript" src="code/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="code/scripts/shBrushXml.js"></script>
+
+	<link type="text/css" rel="stylesheet" href="code/styles/shCore.css" />
+	<link type="text/css" rel="stylesheet" href="code/styles/shThemeDefault.css" />
+	<script type="text/javascript">
+		SyntaxHighlighter.all();
+	</script>
+	<!-- //2018.05.16 -->
+	<style>
+		body {
+			padding: 20px;
+			padding-top: 100px;
+		}
+
+		h1 {
+			font-size: 30px;
+			padding: 0 20px;
+		}
+
+		h2 {
+			padding: 20px 0;
+			margin-top: 20px;
+			border-top: 1px dashed #666666;
+			font-size: 20px;
+		}
+
+		.titH2,
+		.titH3 {
+			padding: 0;
+			margin: 0;
+			border: none;
+		}
+
+		.guideLink {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			padding: 10px;
+			background: #fff;
+			border-bottom: 1px solid #333;
+			z-index: 5;
+		}
+
+		.guideLink>a {
+			display: inline-block;
+			border: 1px solid #333;
+			padding: 5px;
+		}
+
+		.box {
+			margin-top: 20px;
+			border: 1px solid #E3E3E3
+		}
+	</style>
+</head>
+
+<body>
+	<h1>공통 템플릿</h1>
+
+	<h2>Step</h2>
+	<ol class="step1">
+		<li class="ty1 on">
+			<span><em>현재 단계 - </em>STEP 01</span>
+			<strong>ty1</strong>
+		</li>
+		<li class="ty2">
+			<span>STEP 02</span>
+			<strong>ty2</strong>
+		</li>
+		<li class="ty3">
+			<span>STEP 03</span>
+			<strong>ty3</strong>
+		</li>
+		<li class="ty4">
+			<span>STEP 04</span>
+			<strong>ty4</strong>
+		</li>
+		<li class="ty5">
+			<span>STEP 05</span>
+			<strong>ty5</strong>
+		</li>
+	</ol>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<ol class="step1">
+				<li class="ty1 on">
+					<span><em>현재 단계 - </em>STEP 01</span>
+					<strong></strong>
+				</li>
+				<li class="ty2">
+					<span>STEP 02</span>
+					<strong></strong>
+				</li>
+			</ol>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>Lnb</h2>
+	<div class="lnb">
+		<ul class="lnbList">
+			<li>
+				<a href="#"><span>채무조정</span></a>
+				<ul class="lnbDept">
+					<li><a href="#"><span>신규신청</span></a></li>
+					<li><a href="#"><span>재조정</span></a></li>
+					<li><a href="#"><span>수정조정</span></a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#"><span>소액금융</span></a>
+				<ul class="lnbDept">
+					<li><a href="#"><span>신규신청</span></a></li>
+					<li><a href="#"><span>재조정</span></a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#"><span>신용상담보고서</span></a>
+				<ul class="lnbDept">
+					<li><a href="#"><span>신규신청</span></a></li>
+					<li><a href="#"><span>재조정</span></a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#"><span>지원현황</span></a>
+				<ul class="lnbDept">
+					<li><a href="#"><span>신규신청</span></a></li>
+					<li><a href="#"><span>재조정</span></a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<div class="lnb">
+				<ul class="lnbList">
+					<li>
+						<a href="#"><span></span></a>
+						<ul class="lnbDept">
+							<li><a href="#"><span></span></a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#"><span></span></a>
+						<ul class="lnbDept">
+							<li><a href="#"><span></span></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+
+	<h2>로케이션</h2>
+	<div class="locationWrap">
+		<div class="inner">
+			<h2 class="blind">현재위치</h2>
+			<a href="#" class="locationHome"><span>홈</span></a>
+			<ul class="locationNav">
+				<li>
+					<a href="#">채무조정</a>
+					<ul class="locationList">
+						<li><a href="#">리스트 1</a></li>
+						<li><a href="#">리스트 2</a></li>
+					</ul>
+				</li>
+				<li class="fix">
+					<a href="#">채무조정</a>
+					<ul class="locationList">
+						<li><a href="#">리스트 1</a></li>
+						<li><a href="#">리스트 2</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="locationWrap" style="margin-top:10px;">
+		<div class="inner">
+			<h2 class="blind">현재위치</h2>
+			<a href="#" class="locationHome"><span>홈</span></a>
+			<ul class="locationNav">
+				<li class="fix">
+					<span class="txt">회원가입</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<div class="locationWrap">
+				<div class="inner">
+					<h2 class="blind">현재위치</h2>
+					<a href="#" class="locationHome"><span>홈</span></a>
+					<ul class="locationNav">
+						<li>
+							<a href="#"></a>
+							<ul class="locationList">
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+							</ul>
+						</li>
+						<li class="fix">
+							<a href="#"></a>
+							<ul class="locationList">
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="locationWrap" style="margin-top:10px;">
+				<div class="inner">
+					<h2 class="blind">현재위치</h2>
+					<a href="#" class="locationHome"><span>홈</span></a>
+					<ul class="locationNav">
+						<li class="fix">
+							<span class="txt"></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+
+	<h2>List - 1</h2>
+	<ul class="list1">
+		<li>내용이 길어지는 <br /> 2줄 케이스</li>
+		<li>내용이 길어지는 <br /> 2줄 케이스</li>
+		<li>내용이 길어지는 <br /> 2줄 케이스</li>
+	</ul>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<ul class="list1">
+				<li></li>
+			</ul>			
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>List - 1 None Type</h2>
+	<ul class="list1 none">
+		<li>내용이 길어지는 <br /> 2줄 케이스</li>
+		<li>내용이 길어지는 <br /> 2줄 케이스</li>
+		<li>내용이 길어지는 <br /> 2줄 케이스</li>
+	</ul>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<ul class="list1 none">
+				<li></li>
+			</ul>			
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>List - 2</h2>
+	<ul class="list2">
+		<li>내용이 길어지는 <br /> 2줄 케이스</li>
+		<li>내용이 길어지는 <br /> 2줄 케이스</li>
+		<li>내용이 길어지는 <br /> 2줄 케이스</li>
+	</ul>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<ul class="list2">
+				<li></li>
+			</ul>			
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>List - 3 [가 나 다 라 ~~]</h2>
+	<ul class="list3">
+		<li>가. 가나다라<br />가바사</li>
+	</ul>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<ul class="list3">
+				<li></li>
+			</ul>			
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>Num List - 1</h2>
+	<ul class="numList1">
+		<li>내용</li>
+		<li>내용</li>
+		<li>내용</li>
+	</ul>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<ul class="numList1">
+				<li></li>
+			</ul>			
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>Num List - 2</h2>
+	<ul class="numList2">
+		<li>① 주택담보대출을(담보권 실행유예) 연체중인 채무자가 담보 주택을 정상적으로 <br />매각할 수 있도록 금융회사의 담보권 실행을 최장 1년까지 유예할 수 있도록 주택주주주 지원하는 제도</li>
+		<li>② (담보 주택 매매지원) 한국자산관리공사가 운영중인 온비드를 <br />이용하여 채무자의 물건 <br />매각을 지원하는 제도</li>
+	</ul>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<ul class="numList2">
+				<li></li>
+			</ul>			
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>Num List - 2 etc 사이 간격 넓힘</h2>
+	<ul class="numList2 etc">
+		<li>① 주택담보대출을(담보권 실행유예) 연체중인 채무자가 담보 주택을 정상적으로 <br />매각할 수 있도록 금융회사의 담보권 실행을 최장 1년까지 유예할 수 있도록 주택주주주 지원하는 제도</li>
+		<li>② (담보 주택 매매지원) 한국자산관리공사가 운영중인 온비드를 <br />이용하여 채무자의 물건 <br />매각을 지원하는 제도</li>
+	</ul>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<ul class="numList2 etc">
+				<li></li>
+			</ul>			
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>DL List</h2>
+	<dl class="dlList1">
+		<dt>소득정보</dt>
+		<dd>
+			<ul class="list1">
+				<li>월평균 소득은 제세 공과금 제외 후 <span class="color2">실수령액을 기준으로 입력</span>해 주십시오.</li>
+				<li>가족 또는 타인의 도움으로 상환예정인 분은 소득제공자정보를 입력해주시기 바랍니다.</li>
+				<li>일용직이나 아르바이트 등의 소득이 일정하지 않은 경우 평균 소득으로 입력해 주십시오.</li>
+				<li>자영업자의 경우 제비용 공제 후 순 소득을 입력해 주십시오.</li>
+			</ul>
+		</dd>
+	</dl>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<dl class="dlList1">
+				<dt></dt>
+				<dd>
+					<ul class="list1">
+						<li></li>
+					</ul>
+				</dd>
+			</dl>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>DL List 2</h2>
+	<dl class="dlList2">
+		<dt>증명서/ 발급처</dt>
+		<dd>수급자증명원: 구청, 주민센터. 민원24</dd>
+	</dl>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<dl class="dlList2">
+				<dt></dt>
+				<dd></dd>
+			</dl>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>DL List 3</h2>
+	<dl class="dlList3">
+		<dt>채권기관 누락</dt>
+		<dd>블라 블라</dd>
+	</dl>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<dl class="dlList3">
+				<dt></dt>
+				<dd></dd>
+			</dl>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+
+	<h2>TABLE</h2>
+	<div class="tblDiv">
+		<table>
+			<caption></caption>
+			<colgroup>
+				<col style="width:25%">
+				<col style="width:25%">
+				<col style="width:25%">
+				<col style="width:25%">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">헤더</th>
+					<th scope="col">헤더</th>
+					<th scope="col">헤더</th>
+					<th scope="col">헤더</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">내용</th>
+					<td>내용</td>
+					<td>내용</td>
+					<td>내용</td>
+				</tr>
+				<tr>
+					<th scope="row">내용</th>
+					<td>내용</td>
+					<td>내용</td>
+					<td>내용</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<div class="tblDiv">
+				<table>
+					<caption></caption>
+					<colgroup>
+						<col style="width:25%">
+						<col style="width:25%">
+						<col style="width:25%">
+						<col style="width:25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col"></th>
+							<th scope="col"></th>
+							<th scope="col"></th>
+							<th scope="col"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td scope="row" class="tit"></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>TABLE - 입력항목과 일반 정보성이 같이 있는 경우</h2>
+	<div class="tblDiv etc">
+		<table>
+			<caption></caption>
+			<colgroup>
+				<col style="width:25%">
+				<col style="">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">내용</th>
+					<td>
+						<div class="inputBox">
+							<input type="text" name="" id="" class="inp">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">내용</th>
+					<td>내용</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<div class="tblDiv etc">
+				<table>
+					<caption></caption>
+					<colgroup>
+						<col style="width:25%">
+						<col style="width:25%">
+						<col style="width:25%">
+						<col style="width:25%">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"></th>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+
+	<h2>TABLE - 순수 정보성 테이블</h2>
+	<div class="tblDiv only">
+		<table>
+			<caption></caption>
+			<colgroup>
+				<col style="width:25%">
+				<col style="">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">내용</th>
+					<td>내용</td>
+				</tr>
+				<tr>
+					<th scope="row">내용</th>
+					<td>내용</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="box">
+		<pre class="brush: html;">
+			<div class="tblDiv only">
+				<table>
+					<caption></caption>
+					<colgroup>
+						<col style="width:25%">
+						<col style="">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"></th>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>TABLE - 상단 보더색상 별도 class명 tblLine 추가</h2>
+	<div class="tblDiv only tblLine">
+		<table>
+			<caption></caption>
+			<colgroup>
+				<col style="width:25%">
+				<col style="">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">내용</th>
+					<td>내용</td>
+				</tr>
+				<tr>
+					<th scope="row">내용</th>
+					<td>내용</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="box">
+		<pre class="brush: html;">
+			<div class="tblDiv only tblLine">
+				<table>
+					<caption></caption>
+					<colgroup>
+						<col style="width:25%">
+						<col style="">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"></th>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+
+	<h2>TABLE 2</h2>
+	<div class="tblDiv2">
+		<table>
+			<caption></caption>
+			<colgroup>
+				<col style="width:313px">
+				<col style="">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">
+						<span class="label">
+							타이틀 <span class="necessary">필수 입력</span>
+						</span>
+					</th>
+					<td>
+						<div class="inputBox">
+							<input type="text" name="" id="" class="inp" readonly="readonly" value="홍길동">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">
+						<label for="step1Tel3">긴급 연락처<span class="necessary">필수 입력</span></label>
+					</th>
+					<td>
+						<div class="inputBox">
+							<input type="text" name="" id="step1Tel3" class="inp">
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<div class="tblDiv2">
+				<table>
+					<caption></caption>
+					<colgroup>
+						<col style="width:313px">
+						<col style="">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">
+								<span class="label">
+									타이틀 <span class="necessary">필수 입력</span>
+								</span>
+							</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<label for=""> <span class="necessary">필수 입력</span></label>
+							</th>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>TABLE 2 - 위 아래 보더 추가 타입</h2>
+	<div class="tblDiv2 brdAdd">
+		<table>
+			<caption></caption>
+			<colgroup>
+				<col style="width:313px">
+				<col style="">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">
+						<span class="label">
+							타이틀 <span class="necessary">필수 입력</span>
+						</span>
+					</th>
+					<td>
+						<div class="inputBox">
+							<input type="text" name="" id="" class="inp" readonly="readonly" value="홍길동">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">
+						<label for="step1Tel3">긴급 연락처<span class="necessary">필수 입력</span></label>
+					</th>
+					<td>
+						<div class="inputBox">
+							<input type="text" name="" id="step1Tel3" class="inp">
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<div class="tblDiv2 brdAdd">
+				<table>
+					<caption></caption>
+					<colgroup>
+						<col style="width:313px">
+						<col style="">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">
+								<span class="label">
+									타이틀 <span class="necessary">필수 입력</span>
+								</span>
+							</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<label for=""> <span class="necessary">필수 입력</span></label>
+							</th>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+
+	<h2>TABLE 3</h2>
+	<div class="tblDiv3">
+		<table>
+			<caption>대출원리금 계산 정보 입력</caption>
+			<colgroup>
+				<col style="width:170px">
+				<col style="">
+				<col style="width:170px">
+				<col style="">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">
+						<span class="label">
+							상환 방법 <span class="necessary">필수 입력</span>
+						</span>
+					</th>
+					<td colspan="3">
+						<div class="radioBox">
+							<input type="radio" id="way1" name="way"><label for="way1">원리금균등상환</label>
+						</div>
+						<div class="radioBox">
+							<input type="radio" id="way2" name="way"><label for="way2">원금균등상환</label>
+						</div>
+						<div class="radioBox">
+							<input type="radio" id="way3" name="way"><label for="way3">만기일시상환</label>
+						</div>
+						<span class="blTxt5 ml40">상환방법을 선택하여 주십시오.</span>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">
+						<label for="price" class="label">대출금액 <span class="necessary">필수 입력</span></label>
+					</th>
+					<td>
+						<div class="inputBox idx">
+							<input type="text" name="" id="price" class="inp num" onkeyup="numHangul2(this)" onblur="numHangulBlur2(this)" onblur="numHangulBlur2(this)"> <span class="idxTxt">원</span>
+						</div>
+						<p class="blTxt1">대출금액을 입력하여 주십시오.</p>
+					</td>
+					<th scope="row">
+						<label for="period" class="label">대출기간 <span class="necessary">필수 입력</span></label>
+					</th>
+					<td>
+						<div class="inputBox idx">
+							<input type="text" name="" id="period" class="inp num"> <span class="idxTxt">개월</span>
+						</div>
+						<p class="blTxt1">개월수로 입력하여 주십시오.</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<div class="tblDiv3">
+				<table>
+					<caption></caption>
+					<colgroup>
+						<col style="width:170px">
+						<col style="">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">
+								<span class="label">
+									상환 방법 <span class="necessary">필수 입력</span> 
+								</span>
+							</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<label for=""> <span class="necessary">필수 입력</span></label>
+							</th>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>			
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<div class="guideLink">
+		<a href="template_a.html">가이드 1</a>
+		<a href="template_b.html">가이드 2</a>
+		<a href="template_c.html">가이드 3</a>
+		<a href="template_d.html">가이드 4</a>
+	</div>
+
+</body>
+
+</html>

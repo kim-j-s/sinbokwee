@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+	<title>공통 템플릿</title>
+	<link href="../static/css/reset.css" rel="stylesheet" />
+	<link href="../static/css/common.css" rel="stylesheet" />
+	<link href="../static/css/contents.css" rel="stylesheet" />
+	<link href="../static/css/contents2.css" rel="stylesheet" />
+	<script type="text/javascript" src="../static/js/common.js"></script>
+	<script type="text/javascript" src="../static/js/ui.js"></script>
+	<!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement("header"); 
+        document.createElement("nav"); 
+        document.createElement("section"); 
+        document.createElement("article");
+        document.createElement("aside"); 
+        document.createElement("footer");
+    </script>
+<![endif]-->
+
+
+	<!-- 2018.05.16 -->
+	<script type="text/javascript" src="code/scripts/shCore.js"></script>
+	<script type="text/javascript" src="code/scripts/shBrushBash.js"></script>
+	<script type="text/javascript" src="code/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="code/scripts/shBrushJava.js"></script>
+	<script type="text/javascript" src="code/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="code/scripts/shBrushXml.js"></script>
+
+	<link type="text/css" rel="stylesheet" href="code/styles/shCore.css" />
+	<link type="text/css" rel="stylesheet" href="code/styles/shThemeDefault.css" />
+	<script type="text/javascript">
+		SyntaxHighlighter.all();
+	</script>
+	<!-- //2018.05.16 -->
+	<style>
+		body {
+			padding: 20px;
+			padding-top: 100px;
+		}
+
+		h1 {
+			font-size: 30px;
+			padding: 0 20px;
+		}
+
+		h2 {
+			padding: 20px 0;
+			margin-top: 20px;
+			border-top: 1px dashed #666666;
+			font-size: 20px;
+		}
+
+		.titH2,
+		.titH3 {
+			padding: 0;
+			margin: 0;
+			border: none;
+		}
+
+		.guideLink {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			padding: 10px;
+			background: #fff;
+			border-bottom: 1px solid #333;
+		}
+
+		.guideLink>a {
+			display: inline-block;
+			border: 1px solid #333;
+			padding: 5px;
+		}
+
+		.box {
+			margin-top: 20px;
+			border: 1px solid #E3E3E3
+		}
+
+		.brdBox {
+			min-height: 40px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>공통 템플릿</h1>
+
+	<h2>Box</h2>
+	<div class="flagBox"></div>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<div class="flagBox"></div>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>Box</h2>
+	<div class="colorBox1"></div>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<div class="colorBox1"></div>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>brdBox</h2>
+	<div class="brdBox">brdBox</div>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<div class="brdBox"></div>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>brdBox None Border</h2>
+	<div class="brdBox etc">brdBox None Border</div>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<div class="brdBox etc"></div>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>Sign</h2>
+	<div class="infoSign pr206">
+		<label for="sign">신청인 : </label>
+		<div class="inputBox">
+			<input type="text" name="" id="sign" class="inp" placeholder="홍길동">
+		</div>
+		(인 또는 서명)
+	</div>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<div class="infoSign">
+				<label for="sign">신청인 : </label>
+				<div class="inputBox">
+					<input type="text" name="" id="sign" class="inp" placeholder="홍길동">
+				</div>
+				(인 또는 서명)
+			</div>
+		</pre>
+	</div>
+	<p class="blTxt1">우측 여백은 별도의 클래스로 조절</p>
+	<!-- //souce code 뷰어 -->
+
+	<h2>Noti Box</h2>
+	<div class="notiBox">
+		<dl>
+			<dt>유의사항</dt>
+			<dd>
+				<ul class="list1">
+					<li><strong class="color3">온라인 소액대출 대출 신청은 생활안정자금만 가능</strong>하며, 학자금, 시설개선자금, 운영자금, 고금리전환 등은 제한 됩니다.</li>
+					<li>사이버상담부에서 인터넷으로 대출을 신청하실 경우 본인인증수단(휴대폰, 공인인증)이 필요합니다.</li>
+					<li>구비 서류 도착 후 약 일주일 정도의 대출 심사 기간이 소요 될 수 있습니다. 보내신 서류가 도착된 후 일주일 이내의 대출 심사기간이 소요될 수 있습니다.</li>
+				</ul>
+			</dd>
+		</dl>
+	</div>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<div class="notiBox">
+				<dl>
+					<dt></dt>
+					<dd>
+						<ul class="list1">
+							<li></li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>버튼 포함 텍스트</h2>
+	<p class="txt psnRel">
+		<span class="color2">신청비를 납입하지 않으시면 신용회복 신청 절차가 중단</span>될 수 있습니다. <button type="button" class="btnTb ty3 btnRt"><span>인쇄하기</span></button>
+	</p>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<p class="txt psnRel">
+				<span class="color2">신청비를 납입하지 않으시면 신용회복 신청 절차가 중단</span>될 수 있습니다. <button type="button" class="btnTb ty3 btnRt"><span>인쇄하기</span></button>
+			</p>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+
+	<div class="tabWrap">
+		<ul class="tabBar" id="tabMenu">
+			<li class="on">
+				<a href="#tab_cont1">
+					<span>신청비</span>
+				</a>
+			</li>
+			<li>
+				<a href="#tab_cont2">
+					<span>예납금</span>
+				</a>
+			</li>
+			<li>
+				<a href="#tab_cont3">
+					<span>유의사항</span>
+				</a>
+			</li>
+		</ul>
+
+		<!-- 신청비 -->
+		<div id="tab_cont1" class="tabCon">
+			<p class="txt mt40 psnRel">
+				<span class="color2">신청비를 납입하지 않으시면 신용회복 신청 절차가 중단</span>될 수 있습니다. <button type="button" class="btnTb ty3 btnRt"><span>인쇄하기</span></button>
+			</p>
+			<div class="tblDiv tblLine only mt10">
+				<table>
+					<caption>신청비 납입 정보</caption>
+					<colgroup>
+						<col style="width:226px">
+						<col style="*">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">금액</th>
+							<td>50,000원</td>
+						</tr>
+						<tr>
+							<th scope="row">계좌번호</th>
+							<td>123-456789-44-004</td>
+						</tr>
+						<tr>
+							<th scope="row">입금은행</th>
+							<td>기업은행</td>
+						</tr>
+						<tr>
+							<th scope="row">예금주</th>
+							<td>김땡땡 신복위</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- //신청비 -->
+		<!-- 예납금 -->
+		<div id="tab_cont2" class="tabCon">
+			<p class="txt mt40 psnRel">
+				예납금 납입 계좌는 신용회복 지원 확정 시 계속하여 변제금을 납입하실 계좌이므로 주의하여 관리하시기 바랍니다. <button type="button" class="btnTb ty3 btnRt"><span>인쇄하기</span></button>
+			</p>
+			<div class="tblDiv tblLine only mt10">
+				<table>
+					<caption>예납금 납입 정보</caption>
+					<colgroup>
+						<col style="width:226px">
+						<col style="*">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">금액</th>
+							<td>50,000원</td>
+						</tr>
+						<tr>
+							<th scope="row">계좌번호</th>
+							<td>123-456789-44-004</td>
+						</tr>
+						<tr>
+							<th scope="row">입금은행</th>
+							<td>기업은행</td>
+						</tr>
+						<tr>
+							<th scope="row">예금주</th>
+							<td>김땡땡 신복위</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- //예납금 -->
+		<!-- 유의사항 -->
+		<div id="tab_cont3" class="tabCon">
+			<ul class="list1 tablt mt40">
+				<li>수정조정 접수 후 유의할 사항으로, 접수 후 위원회 직원이 접수 등록(접수번호) 안내드립니다. </li>
+				<li>상담 신청서 작성 완료 후 상담 대기 상태(즉, 위원회 직원과 상담 전 상태)는 신청 접수 상태가 아님을 유의해야 합니다.</li>
+				<li>유의사항의 상세내용은 인쇄하기 버튼 클릭 후 미리보기 창을 통해 확인하실 수 있습니다.</li>
+			</ul>
+			<ul class="listLine mt20">
+				<li>
+					채무조정 신청 접수 후 유의사항
+					<button type="button" class="btnTb ty3 fr"><span>인쇄하기</span></button>
+				</li>
+				<li>
+					재조정 신청 접수 후 유의사항
+					<button type="button" class="btnTb ty3 fr"><span>인쇄하기</span></button>
+				</li>
+				<li>
+					수정조정 신청 접수 후 유의사항
+					<button type="button" class="btnTb ty3 fr"><span>인쇄하기</span></button>
+				</li>
+			</ul>
+		</div>
+		<!-- //유의사항 -->
+	</div>
+
+
+
+	<h2>건</h2>
+	<h2 class="titH2">h2 class="titH2"</h2>
+	<div class="nDiv">
+		<span class="notiTxt">
+			(총 <span class="fontMontRegular">10</span>건)
+		</span>
+	</div>
+
+	<h3 class="titH3 mt10">h3 class="titH3"</h3>
+	<div class="nDiv">
+		<span class="notiTxt">
+			(총 <span class="fontMontRegular">10</span>건)
+		</span>
+	</div>
+
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<h2 class="titH2">소액금융 지원 현황</h2>
+			<div class="nDiv">
+				<span class="notiTxt">
+					(총 <span class="fontMontRegular">10</span>건)
+				</span>
+			</div>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<div class="guideLink">
+		<a href="template_a.html">가이드 1</a>
+		<a href="template_b.html">가이드 2</a>
+		<a href="template_c.html">가이드 3</a>
+		<a href="template_d.html">가이드 4</a>
+	</div>
+
+</body>
+
+</html>

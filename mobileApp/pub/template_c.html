@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+	<title>공통 템플릿</title>
+	<link href="../static/css/reset.css" rel="stylesheet" />
+	<link href="../static/css/common.css" rel="stylesheet" />
+	<link href="../static/css/contents.css" rel="stylesheet" />
+	<link href="../static/css/contents2.css" rel="stylesheet" />
+	<script type="text/javascript" src="../static/js/common.js"></script>
+	<script type="text/javascript" src="../static/js/ui.js"></script>
+	<!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement("header"); 
+        document.createElement("nav"); 
+        document.createElement("section"); 
+        document.createElement("article");
+        document.createElement("aside"); 
+        document.createElement("footer");
+    </script>
+<![endif]-->
+
+
+	<!-- 2018.05.16 -->
+	<script type="text/javascript" src="code/scripts/shCore.js"></script>
+	<script type="text/javascript" src="code/scripts/shBrushBash.js"></script>
+	<script type="text/javascript" src="code/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="code/scripts/shBrushJava.js"></script>
+	<script type="text/javascript" src="code/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="code/scripts/shBrushXml.js"></script>
+
+	<link type="text/css" rel="stylesheet" href="code/styles/shCore.css" />
+	<link type="text/css" rel="stylesheet" href="code/styles/shThemeDefault.css" />
+	<script type="text/javascript">
+		SyntaxHighlighter.all();
+	</script>
+	<!-- //2018.05.16 -->
+	<style>
+		body {
+			padding: 20px;
+			padding-top: 100px;
+		}
+
+		h1 {
+			font-size: 30px;
+			padding: 0 20px;
+		}
+
+		h2 {
+			padding: 20px 0;
+			margin-top: 20px;
+			border-top: 1px dashed #666666;
+			font-size: 20px;
+		}
+
+		.titH2,
+		.titH3 {
+			padding: 0;
+			margin: 0;
+			border: none;
+		}
+
+		.guideLink {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			padding: 10px;
+			background: #fff;
+			border-bottom: 1px solid #333;
+		}
+
+		.guideLink>a {
+			display: inline-block;
+			border: 1px solid #333;
+			padding: 5px;
+		}
+
+		.box {
+			margin-top: 20px;
+			border: 1px solid #E3E3E3
+		}
+
+		.brdBox {
+			min-height: 40px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>공통 템플릿</h1>
+
+	<h2>Box</h2>
+	<div class="brdBox"></div>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<div class="brdBox"></div>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>Box</h2>
+	<div class="colorBox" style="padding: 40px"></div>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<div class="colorBox"></div>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>Box</h2>
+	<div class="certifyBox noData">
+		<a href="" title="공인인증서 등록하기">
+			<p>공인인증서를 등록 해주세요.</p>
+		</a>
+	</div>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<div class="certifyBox noData">
+				<a href="" title="공인인증서 등록하기">
+					<p>공인인증서를 등록 해주세요.</p>
+				</a>
+			</div>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>brdBox</h2>
+	<div class="brtLine brbLine2" style="padding: 40px">brdBox</div>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<div class="brtLine brbLine2"></div>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>brdBox color</h2>
+	<div class="brtLine3 brbLine2" style="padding: 40px">brdBox color</div>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<div class="brtLine3 brbLine2"></div>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>Sign</h2>
+	<div class="infoSign pr206">
+		<label for="sign">신청인 : </label>
+		<div class="inputBox">
+			<input type="text" name="" id="sign" class="inp" placeholder="홍길동">
+		</div>
+		(인 또는 서명)
+	</div>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<div class="infoSign">
+				<label for="sign">신청인 : </label>
+				<div class="inputBox">
+					<input type="text" name="" id="sign" class="inp" placeholder="홍길동">
+				</div>
+				(인 또는 서명)
+			</div>
+		</pre>
+	</div>
+	<p class="blTxt1">우측 여백은 별도의 클래스로 조절</p>
+	<!-- //souce code 뷰어 -->
+
+	<h2>Noti Box</h2>
+	<div class="notiBox">
+		<dl>
+			<dt>유의사항</dt>
+			<dd>
+				<ul class="list1">
+					<li><strong class="color3">온라인 소액대출 대출 신청은 생활안정자금만 가능</strong>하며, 학자금, 시설개선자금, 운영자금, 고금리전환 등은 제한 됩니다.</li>
+					<li>사이버지부에서 인터넷으로 대출을 신청하실 경우 본인인증수단(휴대폰, 공인인증)이 필요합니다.</li>
+					<li>구비 서류 도착 후 약 일주일 정도의 대출 심사 기간이 소요 될 수 있습니다. 보내신 서류가 도착된 후 일주일 이내의 대출 심사기간이 소요될 수 있습니다.</li>
+				</ul>
+			</dd>
+		</dl>
+	</div>
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<div class="notiBox">
+				<dl>
+					<dt></dt>
+					<dd>
+						<ul class="list1">
+							<li></li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>Tab style</h2>
+	<div class="tabWrap">
+		<ul class="tabBar" id="tabMenu" role="tablist">
+			<li class="on">
+				<a href="#tab_cont1" role="tab">
+					<span class="ftsz17">서류 등록</span>
+				</a>
+			</li>
+			<li>
+				<a href="#tab_cont2" role="tab">
+					<span class="ftsz17">등록 내역</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<div class="tabWrap">
+				<ul class="tabBar" id="tabMenu" role="tablist">
+					<li class="on">
+						<a href="#tab_cont1" role="tab">
+							<span class="ftsz17">서류 등록</span>
+						</a>
+					</li>
+					<li>
+						<a href="#tab_cont2" role="tab">
+							<span class="ftsz17">등록 내역</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<div class="tabWrap csrTab">
+		<ul class="tabBar" id="tabMenu" role="tablist">
+			<li class="on">
+				<a href="#tab_cont1" role="tab">
+					<span>전체</span>
+				</a>
+			</li>
+			<li>
+				<a href="#tab_cont2" role="tab">
+					<span>신용회복지원</span>
+				</a>
+			</li>
+			<li>
+				<a href="#tab_cont3" role="tab">
+					<span>개인회생<br>파산지원</span>
+				</a>
+			</li>
+			<li>
+				<a href="#tab_cont4" role="tab">
+					<span>소액금융지원</span>
+				</a>
+			</li>
+			<li>
+				<a href="#tab_cont5" role="tab">
+					<span>보증지원</span>
+				</a>
+			</li>
+			<li>
+				<a href="#tab_cont6" role="tab">
+					<span>사이버<br>지부지원</span>
+				</a>
+			</li>
+			<li>
+				<a href="#tab_cont7" role="tab">
+					<span>신용카드지원</span>
+				</a>
+			</li>
+			<li>
+				<a href="#tab_cont8" role="tab">
+					<span>기타</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<div class="tabWrap csrTab">
+				<ul class="tabBar" id="tabMenu" role="tablist">
+					<li class="on">
+						<a href="#tab_cont1" role="tab">
+							<span>전체</span>
+						</a>
+					</li>
+					<li>
+						<a href="#tab_cont2" role="tab">
+							<span>신용회복지원</span>
+						</a>
+					</li>
+					<li>
+						<a href="#tab_cont3" role="tab">
+							<span>개인회생<br>파산지원</span>
+						</a>
+					</li>
+					<li>
+						<a href="#tab_cont4" role="tab">
+							<span>소액금융지원</span>
+						</a>
+					</li>
+					<li>
+						<a href="#tab_cont5" role="tab">
+							<span>보증지원</span>
+						</a>
+					</li>
+					<li>
+						<a href="#tab_cont6" role="tab">
+							<span>사이버<br>지부지원</span>
+						</a>
+					</li>
+					<li>
+						<a href="#tab_cont7" role="tab">
+							<span>신용카드지원</span>
+						</a>
+					</li>
+					<li>
+						<a href="#tab_cont8" role="tab">
+							<span>기타</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h1 class="title">h1 class="title"</h1>
+	<h2 class="titH2">h2 class="titH2"</h2>
+	<h2 class="doneH2">h2 class="doneH2"</h2>
+	<h3 class="doneH3">h3 class="doneH3"</h3>
+
+
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<h1 class="title">h1 class="title"</h1>
+			<h2 class="titH2">h2 class="titH2"</h2>
+			<h2 class="doneH2">h2 class="doneH2"</h2>
+			<h3 class="doneH3">h3 class="doneH3"</h3>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>Text style</h2>
+	<p class="dtxt1">text class="dtxt1"</p>
+	<p class="dtxt2">text class="dtxt2"</p>
+	<p class="dtxt3">text class="dtxt3"</p>
+	<p class="dtxt4">text class="dtxt4"</p>
+
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<p class="dtxt1">text class="dtxt1"</p>
+			<p class="dtxt2">text class="dtxt2"</p>
+			<p class="dtxt3">text class="dtxt3"</p>
+			<p class="dtxt4">text class="dtxt4"</p>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<h2>Paging style</h2>
+	<ul class="csrPaging">
+		<li class="prev">
+			<span>이전글</span>
+			<p>윗글이 존재하지 않습니다.</p>
+		</li>
+		<li class="next">
+			<span>다음글</span>
+			<p><a href="#" title="다음글">다음글이 존재하지 않습니다.</a></p>
+		</li>
+	</ul>
+
+	<!-- souce code 뷰어 -->
+	<div class="box">
+		<pre class="brush: html;">
+			<ul class="csrPaging">
+				<li class="prev">
+					<span>이전글</span>
+					<p>윗글이 존재하지 않습니다.</p>
+				</li>
+				<li class="next">
+					<span>다음글</span>
+					<p><a href="#" title="다음글">다음글이 존재하지 않습니다.</a></p>
+				</li>
+			</ul>
+		</pre>
+	</div>
+	<!-- //souce code 뷰어 -->
+
+	<div class="guideLink">
+		<a href="template_a.html">가이드 1</a>
+		<a href="template_b.html">가이드 2</a>
+		<a href="template_c.html">가이드 3</a>
+		<a href="template_d.html">가이드 4</a>
+	</div>
+
+</body>
+
+</html>

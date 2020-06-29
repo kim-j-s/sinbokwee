@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+
+/* ==============================
+ * common - 컨텐츠 공통
+ * ============================== */
+ 
+
+
+ /* ==============================
+ * main
+ * ============================== */
+
+.wrap.main .header {
+    position: relative;
+    padding: 0px 16px;
+}
+.wrap.main .header .logo {
+    display: block;
+    position: absolute;
+    left: 16px;
+    top: 19px;
+    font-size: 0px;
+    width: 130px;
+    height: 25px;
+    background: url(../images/common/main_icon.png) 0px -80px / 300px 200px no-repeat;
+}
+
+.wrap.main .btnLogin {
+    position: absolute;
+    top: 20px;
+    right: 53px;
+    width: 23px;
+    height: 23px;
+    font-size: 0px;
+    background: url(../images/common/main_icon.png) -29px -36px / 300px 200px no-repeat;
+}
+
+.wrap.main .btnSide {
+    background: url(../images/common/main_icon.png) -60px -36px / 300px 200px no-repeat;
+}
+
+.btnSide { border:10px solid  red;
+
+    position: absolute;
+    top: 20px;
+    right: 16px;
+    width: 23px;
+    height: 23px;
+    font-size: 0px;
+    background: url(../images/common/sprite_icon.png) -24px 2px / 300px 150px no-repeat;
+}
+ /* ==============================
+ * content
+ * ============================== */
+
+
+@media screen and (max-width:640px){
+}
+
